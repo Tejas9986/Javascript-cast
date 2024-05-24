@@ -63,4 +63,48 @@ const tcs = {
     isLoggedoff : false,
 }
 
-console.log(tcs.fullName.middleName);
+// console.log(tcs.fullName.middleName);
+
+
+const obj1 = {1: "a", 2: "b"}
+const obj2 = {3: 'a', 4: 'b'}
+
+// const obj3 = {obj1, obj2}
+// const obj3 = Object.assign({}, obj1, obj2)    // assign operator is used
+
+const obj3 = {...obj1, ...obj2}     // (...) spread operator is used  it is easy
+// console.log(obj3);  // o/p= combines in obj3.
+
+// console.log(Object.entries(tinderUser));  // keys and values of object will print
+
+// console.log(tinderUser.hasOwnProperty('isLoggedin'));
+
+
+
+//############   OBJECT DE-STRUCTURED  #################################################
+
+const course = {
+    courseName : "javascript Tutorial",
+    instructor : "Hitesh",
+    timeSpan : "2 months",
+}
+
+console.log(course.instructor)  // simple method regular use
+
+const {timeSpan: Time}= course  // de-structured method
+console.log(Time)
+
+
+
+// {
+//     "name":"tejas",
+//     "coyrsename: 'js in hindi",
+//     'price': "free"
+// }
+
+
+
+
+
+
+
